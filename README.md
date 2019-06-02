@@ -1,5 +1,9 @@
 # learningJackson
 learning repository for Jackson
 
-## Annotations Sample
-https://github.com/BooookStore/learningJackson/tree/master/src/test/java/annotations
+## Jackson Example
+
+### core
+
+- [First Example](https://github.com/BooookStore/learningJackson/tree/master/src/test/java/firstexample)
+- [Annotations](https://github.com/BooookStore/learningJackson/tree/master/src/test/java/annotations)
