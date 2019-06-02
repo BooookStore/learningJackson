@@ -1,0 +1,14 @@
+{
+  "title" : "初恋",
+  "artist" : {
+    "name" : "宇多田ヒカル",
+    "dateOfBirth" : "1983-01-19",
+    "appearanceOnStage" : {
+      "テレビ" : "HERO, NHK",
+      "ラジオ" : "J-WAVE, InterFM",
+      "CM" : "ソニー, NTTドコモ, サントリー"
+    }
+  },
+  "links" : [ "link1", "link2" ],
+  "songs" : [ "Play A Love Song", "あなた", "初恋" ]
+}
