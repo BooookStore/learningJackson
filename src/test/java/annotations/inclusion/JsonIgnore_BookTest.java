@@ -6,8 +6,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
+import static org.junit.Assert.*;
 import static uk.co.datumedge.hamcrest.json.SameJSONAs.sameJSONAs;
 
 public class JsonIgnore_BookTest {
@@ -28,12 +27,6 @@ public class JsonIgnore_BookTest {
         objectMapper.readValue(bookJson, JsonIgnore_Book.class);
     }
 
-    /**
-     * フィールドに JsonIgnore が付与されているが、 setter に JsonProperty が付与されている場合
-     * 書き込みは無視されるが読み込まれる。
-     *
-     * @throws IOException
-     */
     @Test
     public void readIgnorePropertyTest() throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
@@ -46,6 +39,6 @@ public class JsonIgnore_BookTest {
 
         JsonIgnore_Book book = objectMapper.readValue(jsonIgnore_book, JsonIgnore_Book.class);
         assertEquals(1L, ((long) book.getId()));
-        assertEquals("123-456-78", book.getIsbn());
+        assertNull(book.getIsbn());
     }
 }

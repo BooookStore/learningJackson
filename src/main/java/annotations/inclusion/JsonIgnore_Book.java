@@ -1,7 +1,6 @@
 package annotations.inclusion;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class JsonIgnore_Book {
 
@@ -31,7 +30,6 @@ public class JsonIgnore_Book {
         return isbn;
     }
 
-    @JsonProperty
     public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
