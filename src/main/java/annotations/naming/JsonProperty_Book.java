@@ -1,4 +1,4 @@
-package annotations;
+package annotations.naming;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

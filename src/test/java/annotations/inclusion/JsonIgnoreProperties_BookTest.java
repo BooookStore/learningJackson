@@ -1,4 +1,4 @@
-package annotations;
+package annotations.inclusion;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
