@@ -41,7 +41,6 @@ public class JsonView_BookTest {
                 "\"publisher\":\"publisher\"" +
                 "}"));
 
-
         // check for deserialize
         JsonView_Book readValue = objectMapper.readValue(bookJson_normal, JsonView_Book.class);
         assertEquals(1L, (long) readValue.getId());
