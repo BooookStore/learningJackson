@@ -20,8 +20,7 @@ public class JsonAutoDetect_BookTest {
         System.out.println(bookJson);
 
         assertThat(bookJson, sameJSONAs("{" +
-                "\"id\":1," +
-                "\"isbn\":\"123-456-78\"" +
+                "\"id\":1" +
                 "}"));
 
         // check for deserialize
