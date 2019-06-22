@@ -2,7 +2,10 @@ package annotations.inclusion;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 
-@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.PUBLIC_ONLY)
+@JsonAutoDetect(
+        fieldVisibility = JsonAutoDetect.Visibility.PUBLIC_ONLY,
+        getterVisibility = JsonAutoDetect.Visibility.NONE
+)
 public class JsonAutoDetect_Book {
 
     public Long id;
@@ -18,6 +21,14 @@ public class JsonAutoDetect_Book {
         this.isbn = isbn;
     }
 
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
 }
 
 
